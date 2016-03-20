@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NexaRustSans-Black.otf">
+            <string>NexaRustSans-Black</string>
+            <string>NexaRustSans-Black</string>
+            <string>NexaRustSans-Black</string>
+            <string>NexaRustSans-Black</string>
+            <string>NexaRustSans-Black</string>
+        </mutableArray>
+        <mutableArray key="NexaRustSlab-BlackShadow01.otf">
+            <string>NexaRustSlab-BlackShadow01</string>
+            <string>NexaRustSlab-BlackShadow01</string>
+            <string>NexaRustSlab-BlackShadow01</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--tamaño-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="PizzaPizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="XBn-qT-N1i">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Il5-cS-vvv">
+                                <rect key="frame" x="0.0" y="15" width="600" height="516"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSa-kN-sLU">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="52"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tamaño" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNr-Gd-lvu">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="52"/>
+                                                <fontDescription key="fontDescription" name="NexaRustSans-Black" family="Nexa Rust Sans" pointSize="25"/>
+                                                <color key="textColor" red="0.95737179490000002" green="0.63308754040000004" blue="0.2421550754" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="PRL-wa-jTl"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="PRL-wa-jTl"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgV-A3-IiV">
+                                        <rect key="frame" x="0.0" y="52" width="600" height="154"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza_tamanio" translatesAutoresizingMaskIntoConstraints="NO" id="mjJ-Ei-Gda">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="154"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="swx-7H-A40">
+                                        <rect key="frame" x="0.0" y="206" width="600" height="258"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WrC-1J-bQx">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="258"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dz5-It-3lE">
+                                                <rect key="frame" x="180" y="0.0" width="420" height="258"/>
+                                                <subviews>
+                                                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4k9-MR-4J3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="420" height="52"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpd-cz-E3u">
+                                                        <rect key="frame" x="0.0" y="52" width="420" height="51"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="chica" image="radio_a">
+                                                            <color key="titleColor" red="0.5607843137254902" green="0.47843137254901963" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="eligioChica:" destination="9pv-A4-QxB" eventType="touchUpInside" id="I8w-Jg-ctX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bd-LH-AWD">
+                                                        <rect key="frame" x="0.0" y="103" width="420" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="mediana" image="radio_a">
+                                                            <color key="titleColor" red="0.5607843137254902" green="0.47843137254901963" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="eligioMediana:" destination="9pv-A4-QxB" eventType="touchUpInside" id="KQ7-bU-ZIA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgI-TH-WOY">
+                                                        <rect key="frame" x="0.0" y="155" width="420" height="51"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="grande" image="radio_a">
+                                                            <color key="titleColor" red="0.5607843137254902" green="0.47843137254901963" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="eligioGrande:" destination="9pv-A4-QxB" eventType="touchUpInside" id="biF-Qe-2nA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KwQ-sg-z1v">
+                                                        <rect key="frame" x="0.0" y="206" width="420" height="52"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="WrC-1J-bQx" firstAttribute="width" secondItem="swx-7H-A40" secondAttribute="width" multiplier="0.3" id="QkA-el-tTU"/>
+                                            <constraint firstItem="dz5-It-3lE" firstAttribute="width" secondItem="swx-7H-A40" secondAttribute="width" multiplier="0.7" id="b2e-xH-NYC"/>
+                                            <constraint firstItem="dz5-It-3lE" firstAttribute="height" secondItem="swx-7H-A40" secondAttribute="height" multiplier="0.6" id="kQQ-kV-taB"/>
+                                            <constraint firstItem="WrC-1J-bQx" firstAttribute="height" secondItem="swx-7H-A40" secondAttribute="height" multiplier="0.4" id="pGz-Ab-huf"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="pGz-Ab-huf"/>
+                                                <exclude reference="kQQ-kV-taB"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dax-Dn-MwP">
+                                        <rect key="frame" x="0.0" y="464" width="600" height="52"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fgV-A3-IiV" firstAttribute="height" secondItem="Il5-cS-vvv" secondAttribute="height" multiplier="0.3" id="BQi-aC-kJD"/>
+                                    <constraint firstItem="PSa-kN-sLU" firstAttribute="height" secondItem="Il5-cS-vvv" secondAttribute="height" multiplier="0.1" id="Ccc-an-Mes"/>
+                                    <constraint firstItem="swx-7H-A40" firstAttribute="height" secondItem="Il5-cS-vvv" secondAttribute="height" multiplier="0.5" id="YxC-o1-lID"/>
+                                    <constraint firstAttribute="height" constant="516" id="caN-1N-JCP"/>
+                                    <constraint firstItem="dax-Dn-MwP" firstAttribute="height" secondItem="Il5-cS-vvv" secondAttribute="height" multiplier="0.1" id="uqy-xf-nZe"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XBn-qT-N1i" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="AUt-yq-lj2"/>
+                            <constraint firstAttribute="trailing" secondItem="XBn-qT-N1i" secondAttribute="trailing" id="Cnq-Uo-H6W"/>
+                            <constraint firstAttribute="trailing" secondItem="Il5-cS-vvv" secondAttribute="trailing" id="Nd2-sr-aAZ"/>
+                            <constraint firstItem="XBn-qT-N1i" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="PQ4-zp-o6a"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Il5-cS-vvv" secondAttribute="bottom" constant="20" id="QOT-uJ-dkN"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="XBn-qT-N1i" secondAttribute="bottom" id="VBP-aS-2Aa"/>
+                            <constraint firstItem="Il5-cS-vvv" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="W7a-D2-Vel"/>
+                            <constraint firstItem="Il5-cS-vvv" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="15" id="bC1-7b-X7u"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="tamaño" image="pizza" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="t_chicha" destination="Kpd-cz-E3u" id="HVH-7E-N4g"/>
+                        <outlet property="t_grande" destination="RgI-TH-WOY" id="VYc-0S-TYN"/>
+                        <outlet property="t_mediana" destination="3bd-LH-AWD" id="kW4-RP-kqC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Masa-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="PizzaPizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="QPa-zr-Q1a">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oAw-BE-dPL">
+                                <rect key="frame" x="0.0" y="15" width="600" height="516"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E1c-37-5bz">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="51"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Icm-vd-ON1">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="51"/>
+                                                <fontDescription key="fontDescription" name="NexaRustSans-Black" family="Nexa Rust Sans" pointSize="25"/>
+                                                <color key="textColor" red="0.95737179490000002" green="0.63308754040000004" blue="0.2421550754" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gP5-Bn-tYN">
+                                        <rect key="frame" x="0.0" y="51" width="600" height="155"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza_masa" translatesAutoresizingMaskIntoConstraints="NO" id="pE1-uB-P0Y">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="155"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4c-Fz-MZl">
+                                        <rect key="frame" x="0.0" y="206" width="600" height="258"/>
+                                        <subviews>
+                                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v1m-Sk-3G4">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="258"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7Zk-i1-0pD">
+                                                <rect key="frame" x="180" y="0.0" width="420" height="258"/>
+                                                <subviews>
+                                                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0J3-LY-mta">
+                                                        <rect key="frame" x="0.0" y="0.0" width="420" height="52"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2b-K4-k5z">
+                                                        <rect key="frame" x="0.0" y="52" width="420" height="51"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="delgada" image="radio_a">
+                                                            <color key="titleColor" red="0.42745098040000001" green="0.32549019610000002" blue="0.34901960780000002" alpha="0.74493534480000001" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="seleccionoDelgada:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="ZRU-rw-SPx"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krQ-5k-ifJ">
+                                                        <rect key="frame" x="0.0" y="103" width="420" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="crujiente" image="radio_a">
+                                                            <color key="titleColor" red="0.42745098040000001" green="0.32549019610000002" blue="0.34901960780000002" alpha="0.74493534480000001" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="seleccionoCrujiente:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Bad-iq-Trv"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nzw-ad-CvV">
+                                                        <rect key="frame" x="0.0" y="155" width="420" height="51"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="gruesa" image="radio_a">
+                                                            <color key="titleColor" red="0.42745098040000001" green="0.32549019610000002" blue="0.34901960780000002" alpha="0.74493534480000001" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="seleccionoGruesa:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="HII-o8-rWT"/>
+                                                        </connections>
+                                                    </button>
+                                                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTi-Wg-r6a">
+                                                        <rect key="frame" x="0.0" y="206" width="420" height="52"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="7Zk-i1-0pD" firstAttribute="width" secondItem="b4c-Fz-MZl" secondAttribute="width" multiplier="0.7" id="fpc-w2-RVC"/>
+                                            <constraint firstItem="v1m-Sk-3G4" firstAttribute="width" secondItem="b4c-Fz-MZl" secondAttribute="width" multiplier="0.3" id="gNv-Ur-2D9"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oqc-rq-VDq">
+                                        <rect key="frame" x="0.0" y="464" width="600" height="52"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Oqc-rq-VDq" firstAttribute="height" secondItem="oAw-BE-dPL" secondAttribute="height" multiplier="0.1" id="4pr-Qh-PIW"/>
+                                    <constraint firstItem="b4c-Fz-MZl" firstAttribute="height" secondItem="oAw-BE-dPL" secondAttribute="height" multiplier="0.5" id="IKA-L7-2VS"/>
+                                    <constraint firstItem="E1c-37-5bz" firstAttribute="height" secondItem="oAw-BE-dPL" secondAttribute="height" multiplier="0.1" id="LbQ-rp-NlM"/>
+                                    <constraint firstItem="gP5-Bn-tYN" firstAttribute="height" secondItem="oAw-BE-dPL" secondAttribute="height" multiplier="0.3" id="hsi-8C-9H1"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="QPa-zr-Q1a" secondAttribute="bottom" id="1ce-dH-dMT"/>
+                            <constraint firstItem="oAw-BE-dPL" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="4ML-F1-2BU"/>
+                            <constraint firstItem="QPa-zr-Q1a" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" id="9dr-Vy-UWJ"/>
+                            <constraint firstItem="QPa-zr-Q1a" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="CsJ-e6-5nR"/>
+                            <constraint firstItem="QPa-zr-Q1a" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="DhO-7A-UQB"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="oAw-BE-dPL" secondAttribute="bottom" constant="20" id="HSF-DX-2FA"/>
+                            <constraint firstItem="oAw-BE-dPL" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="15" id="IPG-L2-390"/>
+                            <constraint firstAttribute="trailing" secondItem="QPa-zr-Q1a" secondAttribute="trailing" id="a3j-r2-TRs"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="QPa-zr-Q1a" secondAttribute="bottom" id="gid-nh-WRc"/>
+                            <constraint firstItem="QPa-zr-Q1a" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="h9w-xD-dEH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QPa-zr-Q1a" secondAttribute="trailing" id="k98-RK-VPj"/>
+                            <constraint firstAttribute="trailing" secondItem="oAw-BE-dPL" secondAttribute="trailing" id="ymx-fq-Mkc"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9dr-Vy-UWJ"/>
+                                <exclude reference="DhO-7A-UQB"/>
+                                <exclude reference="k98-RK-VPj"/>
+                                <exclude reference="gid-nh-WRc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Masa" image="masa" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="m_crujiente" destination="krQ-5k-ifJ" id="PRf-Qm-Ajj"/>
+                        <outlet property="m_delgada" destination="W2b-K4-k5z" id="Z4p-XM-0WU"/>
+                        <outlet property="m_gruesa" destination="Nzw-ad-CvV" id="ZZW-29-mD6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Queso-->
+        <scene sceneID="kAI-PF-55h">
+            <objects>
+                <viewController id="gVf-db-Y2x" customClass="ThirdViewController" customModule="PizzaPizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PGW-FW-vX2"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wje-IC-U2r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l4D-2o-cGl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="bk0-Sg-tuW">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="exj-l9-70c">
+                                <rect key="frame" x="0.0" y="15" width="600" height="516"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="172-6X-oe0">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="516"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2jp-JO-btm">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="104"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yun-6z-jtt">
+                                                        <rect key="frame" x="0.0" y="0.0" width="600" height="104"/>
+                                                        <fontDescription key="fontDescription" name="NexaRustSans-Black" family="Nexa Rust Sans" pointSize="25"/>
+                                                        <color key="textColor" red="0.95737179490000002" green="0.63308754040000004" blue="0.2421550754" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4D-U1-Xqj">
+                                                <rect key="frame" x="0.0" y="104" width="600" height="154"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza_queso" translatesAutoresizingMaskIntoConstraints="NO" id="5XY-LH-zM3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="600" height="154"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xqr-UT-6Zd">
+                                                <rect key="frame" x="0.0" y="258" width="600" height="258"/>
+                                                <subviews>
+                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VQl-Cs-1WW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="600" height="258"/>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="gVf-db-Y2x" id="1JS-J6-xjY"/>
+                                                            <outlet property="delegate" destination="gVf-db-Y2x" id="TiC-S7-klQ"/>
+                                                        </connections>
+                                                    </pickerView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="2jp-JO-btm" firstAttribute="height" secondItem="172-6X-oe0" secondAttribute="height" multiplier="0.1" id="JMR-7e-pMV"/>
+                                            <constraint firstItem="k4D-U1-Xqj" firstAttribute="height" secondItem="172-6X-oe0" secondAttribute="height" multiplier="0.3" id="fbA-Kd-SJT"/>
+                                            <constraint firstItem="Xqr-UT-6Zd" firstAttribute="height" secondItem="172-6X-oe0" secondAttribute="height" multiplier="0.5" id="oak-hH-RKL"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bk0-Sg-tuW" firstAttribute="top" secondItem="l4D-2o-cGl" secondAttribute="top" id="HjA-cV-QML"/>
+                            <constraint firstItem="exj-l9-70c" firstAttribute="leading" secondItem="l4D-2o-cGl" secondAttribute="leading" id="QB0-6I-h58"/>
+                            <constraint firstItem="bk0-Sg-tuW" firstAttribute="leading" secondItem="l4D-2o-cGl" secondAttribute="leading" id="R4K-bK-tHK"/>
+                            <constraint firstItem="Wje-IC-U2r" firstAttribute="top" secondItem="exj-l9-70c" secondAttribute="bottom" constant="20" id="dkO-6M-Uyv"/>
+                            <constraint firstAttribute="trailing" secondItem="bk0-Sg-tuW" secondAttribute="trailing" id="fzw-nU-Wck"/>
+                            <constraint firstItem="Wje-IC-U2r" firstAttribute="top" secondItem="bk0-Sg-tuW" secondAttribute="bottom" id="i5j-zs-djp"/>
+                            <constraint firstAttribute="trailing" secondItem="exj-l9-70c" secondAttribute="trailing" id="j6t-5a-tgp"/>
+                            <constraint firstItem="exj-l9-70c" firstAttribute="top" secondItem="l4D-2o-cGl" secondAttribute="top" constant="15" id="p8B-oO-Eqn"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Queso" image="queso" id="cny-Oa-Wr3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="08j-nd-umh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85" y="923"/>
+        </scene>
+        <!--Ingredientes-->
+        <scene sceneID="PL8-8X-rOK">
+            <objects>
+                <viewController id="kTw-ug-4dR" userLabel="Ingredientes" customClass="FourthViewController" customModule="PizzaPizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OQc-sQ-9oV"/>
+                        <viewControllerLayoutGuide type="bottom" id="pcK-SP-dTR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS3-UG-4Ko">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="5jL-xg-N3O">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lsv-KM-ell">
+                                <rect key="frame" x="0.0" y="15" width="600" height="516"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ceg-9G-vpH">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="52"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INGREDIENTES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7c-41-pew">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="52"/>
+                                                <fontDescription key="fontDescription" name="NexaRustSans-Black" family="Nexa Rust Sans" pointSize="25"/>
+                                                <color key="textColor" red="0.95737179490000002" green="0.63308754040000004" blue="0.2421550754" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92D-7V-mx1">
+                                        <rect key="frame" x="0.0" y="52" width="600" height="412"/>
+                                        <subviews>
+                                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YUx-TV-X2G">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="412"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="XAO-o9-BnA">
+                                                <rect key="frame" x="36" y="0.0" width="282" height="412"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzH-5h-ecM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="282" height="103"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="jamón" image="check_a">
+                                                            <color key="titleColor" red="0.42745098040000001" green="0.32549019610000002" blue="0.34901960780000002" alpha="0.74493534480000001" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="eligioJamon:" destination="kTw-ug-4dR" eventType="touchUpInside" id="1oi-MJ-Tfr"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkz-9k-00g">
+                                                        <rect key="frame" x="0.0" y="103" width="282" height="103"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="pepperoni" image="check_a">
+                                                            <color key="titleColor" red="0.42745098040000001" green="0.32549019610000002" blue="0.34901960780000002" alpha="0.74493534480000001" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="eligioPepperoni:" destination="kTw-ug-4dR" eventType="touchUpInside" id="afJ-Ex-5aZ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5J-9c-2JM">
+                                                        <rect key="frame" x="0.0" y="206" width="282" height="103"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="pavo" image="check_a">
+                                                            <color key="titleColor" red="0.42745098040000001" green="0.32549019610000002" blue="0.34901960780000002" alpha="0.74493534480000001" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="eligioPavo:" destination="kTw-ug-4dR" eventType="touchUpInside" id="wMR-fx-sRR"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZY-nF-0wl">
+                                                        <rect key="frame" x="0.0" y="309" width="282" height="103"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="salchicha" image="check_a">
+                                                            <color key="titleColor" red="0.42745098040000001" green="0.32549019610000002" blue="0.34901960780000002" alpha="0.74493534480000001" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="eligioSalchicha:" destination="kTw-ug-4dR" eventType="touchUpInside" id="pQG-ql-8Yj"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="PoB-7N-JDU">
+                                                <rect key="frame" x="318" y="0.0" width="282" height="412"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKB-RG-Uwa">
+                                                        <rect key="frame" x="0.0" y="0.0" width="282" height="103"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="aceituna" image="check_a">
+                                                            <color key="titleColor" red="0.42745098040000001" green="0.32549019610000002" blue="0.34901960780000002" alpha="0.74493534480000001" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="eligioAceituna:" destination="kTw-ug-4dR" eventType="touchUpInside" id="hZY-jb-1SL"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5P-XA-L1A">
+                                                        <rect key="frame" x="0.0" y="103" width="282" height="103"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="cebolla" image="check_a">
+                                                            <color key="titleColor" red="0.42745098040000001" green="0.32549019610000002" blue="0.34901960780000002" alpha="0.74493534480000001" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="eligioCebolla:" destination="kTw-ug-4dR" eventType="touchUpInside" id="Nks-Sb-oSg"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnN-0m-cYy">
+                                                        <rect key="frame" x="0.0" y="206" width="282" height="103"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="anchoa" image="check_a">
+                                                            <color key="titleColor" red="0.42745098040000001" green="0.32549019610000002" blue="0.34901960780000002" alpha="0.74493534480000001" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="eligioAnchoa:" destination="kTw-ug-4dR" eventType="touchUpInside" id="F9Y-Ey-j1b"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2q-iu-9Kl">
+                                                        <rect key="frame" x="0.0" y="309" width="282" height="103"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <state key="normal" title="piña" image="check_a">
+                                                            <color key="titleColor" red="0.42745098040000001" green="0.32549019610000002" blue="0.34901960780000002" alpha="0.74493534480000001" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="eligioPinia:" destination="kTw-ug-4dR" eventType="touchUpInside" id="wGa-EH-5ot"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="YUx-TV-X2G" firstAttribute="width" secondItem="92D-7V-mx1" secondAttribute="width" multiplier="0.06" id="Hkv-xY-wjf"/>
+                                            <constraint firstItem="XAO-o9-BnA" firstAttribute="width" secondItem="92D-7V-mx1" secondAttribute="width" multiplier="0.47" id="IqY-fE-hVB"/>
+                                            <constraint firstItem="PoB-7N-JDU" firstAttribute="width" secondItem="92D-7V-mx1" secondAttribute="width" multiplier="0.47" id="dCR-lO-YFf"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wp9-QX-IzP">
+                                        <rect key="frame" x="0.0" y="464" width="600" height="52"/>
+                                        <subviews>
+                                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3o-dz-Rix">
+                                                <rect key="frame" x="0.0" y="0.0" width="180" height="52"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2PM-P9-R63">
+                                                <rect key="frame" x="180" y="0.0" width="240" height="52"/>
+                                                <color key="backgroundColor" red="0.42745098040000001" green="0.32549019610000002" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="NexaRustSlab-BlackShadow01" family="Nexa Rust Slab" pointSize="20"/>
+                                                <state key="normal" title="ORDENAR">
+                                                    <color key="titleColor" red="0.97433952010000002" green="0.96963256590000002" blue="0.97904647430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="zGa-pn-v40" kind="show" id="nB2-xE-pPD"/>
+                                                </connections>
+                                            </button>
+                                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6p-Ot-a6q">
+                                                <rect key="frame" x="420" y="0.0" width="180" height="52"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="h3o-dz-Rix" firstAttribute="width" secondItem="wp9-QX-IzP" secondAttribute="width" multiplier="0.3" id="Vwd-Y3-Wnn"/>
+                                            <constraint firstItem="z6p-Ot-a6q" firstAttribute="width" secondItem="wp9-QX-IzP" secondAttribute="width" multiplier="0.3" id="w2o-4o-Vtn"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Ceg-9G-vpH" firstAttribute="height" secondItem="lsv-KM-ell" secondAttribute="height" multiplier="0.1" id="V1P-Xi-lP7"/>
+                                    <constraint firstItem="92D-7V-mx1" firstAttribute="height" secondItem="lsv-KM-ell" secondAttribute="height" multiplier="0.8" id="Wbh-E0-wwf"/>
+                                    <constraint firstItem="wp9-QX-IzP" firstAttribute="height" secondItem="lsv-KM-ell" secondAttribute="height" multiplier="0.1" id="em0-zo-Sro"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5jL-xg-N3O" secondAttribute="trailing" id="0ZP-lp-BcG"/>
+                            <constraint firstAttribute="trailing" secondItem="lsv-KM-ell" secondAttribute="trailing" id="IJf-ZD-Bc6"/>
+                            <constraint firstItem="5jL-xg-N3O" firstAttribute="leading" secondItem="QS3-UG-4Ko" secondAttribute="leading" id="Kc0-cZ-1WI"/>
+                            <constraint firstItem="lsv-KM-ell" firstAttribute="leading" secondItem="QS3-UG-4Ko" secondAttribute="leading" id="X4H-si-7fb"/>
+                            <constraint firstItem="pcK-SP-dTR" firstAttribute="top" secondItem="5jL-xg-N3O" secondAttribute="bottom" id="d0v-6h-lWN"/>
+                            <constraint firstItem="5jL-xg-N3O" firstAttribute="top" secondItem="QS3-UG-4Ko" secondAttribute="top" id="hs8-7Y-KzI"/>
+                            <constraint firstItem="lsv-KM-ell" firstAttribute="top" secondItem="QS3-UG-4Ko" secondAttribute="top" constant="15" id="i5q-sQ-j7W"/>
+                            <constraint firstItem="pcK-SP-dTR" firstAttribute="top" secondItem="lsv-KM-ell" secondAttribute="bottom" constant="20" id="zH4-ww-Cuz"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ingredientes" image="ingredientes" id="o76-XN-M4l"/>
+                    <connections>
+                        <outlet property="i_aceituna" destination="xKB-RG-Uwa" id="zfn-Hw-x3a"/>
+                        <outlet property="i_anchoa" destination="pnN-0m-cYy" id="RZd-z0-6Zo"/>
+                        <outlet property="i_cebolla" destination="P5P-XA-L1A" id="7Be-5b-Sym"/>
+                        <outlet property="i_jamon" destination="pzH-5h-ecM" id="IHy-OD-BPg"/>
+                        <outlet property="i_pavo" destination="h5J-9c-2JM" id="18D-Xt-R8c"/>
+                        <outlet property="i_pepperoni" destination="Nkz-9k-00g" id="l53-AB-q9A"/>
+                        <outlet property="i_pinia" destination="E2q-iu-9Kl" id="jx0-jg-7rW"/>
+                        <outlet property="i_salchicha" destination="PZY-nF-0wl" id="uhB-Na-uMZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gLZ-mx-A4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="726" y="1063"/>
+        </scene>
+        <!--Mi Orden View Controller-->
+        <scene sceneID="uoo-Og-6pG">
+            <objects>
+                <viewController id="zGa-pn-v40" customClass="MiOrdenViewController" customModule="PizzaPizza" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0T7-Hx-zUN"/>
+                        <viewControllerLayoutGuide type="bottom" id="gCb-Ga-eEn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lu9-Dk-Jdy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo" translatesAutoresizingMaskIntoConstraints="NO" id="plm-NX-PDf">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ABF-rQ-736">
+                                <rect key="frame" x="35" y="15" width="530" height="516"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q0c-d3-ojT">
+                                        <rect key="frame" x="0.0" y="0.0" width="530" height="52"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mi Orden" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYX-7i-D7M">
+                                                <rect key="frame" x="0.0" y="0.0" width="530" height="52"/>
+                                                <fontDescription key="fontDescription" name="NexaRustSans-Black" family="Nexa Rust Sans" pointSize="25"/>
+                                                <color key="textColor" red="0.95737179490000002" green="0.63308754040000004" blue="0.2421550754" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EXf-G3-aWH">
+                                        <rect key="frame" x="0.0" y="52" width="530" height="155"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ETm-bR-Gbs">
+                                                <rect key="frame" x="0.0" y="0.0" width="265" height="155"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tamaño" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAr-g4-fwm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="265" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                                        <color key="textColor" red="0.95737179490000002" green="0.63308754040000004" blue="0.2421550754" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Masa" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMB-CG-Jia">
+                                                        <rect key="frame" x="0.0" y="52" width="265" height="51"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                                        <color key="textColor" red="0.95737179490000002" green="0.63308754040000004" blue="0.2421550754" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Queso" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0m-Dk-Pjr">
+                                                        <rect key="frame" x="0.0" y="103" width="265" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="20"/>
+                                                        <color key="textColor" red="0.95737179490000002" green="0.63308754040000004" blue="0.2421550754" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ELx-IH-FPK">
+                                                <rect key="frame" x="265" y="0.0" width="265" height="155"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mi Orden" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJt-Cg-4dG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="265" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" red="0.42745098040000001" green="0.32549019610000002" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mi Orden" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUs-ah-4z7">
+                                                        <rect key="frame" x="0.0" y="52" width="265" height="51"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" red="0.42745098040000001" green="0.32549019610000002" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mi Orden" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJm-bV-rVV">
+                                                        <rect key="frame" x="0.0" y="103" width="265" height="52"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="textColor" red="0.42745098040000001" green="0.32549019610000002" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JdY-Vy-dC0">
+                                        <rect key="frame" x="0.0" y="207" width="530" height="258"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kpl-y9-hOh">
+                                                <rect key="frame" x="0.0" y="0.0" width="530" height="258"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </tableView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Kpl-y9-hOh" firstAttribute="height" secondItem="JdY-Vy-dC0" secondAttribute="height" id="Yzz-Sc-t9o"/>
+                                            <constraint firstAttribute="height" constant="259" id="cwu-0d-WKm"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="cwu-0d-WKm"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fyj-5l-K1q">
+                                        <rect key="frame" x="0.0" y="465" width="530" height="51"/>
+                                        <subviews>
+                                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DqX-bR-Fna">
+                                                <rect key="frame" x="0.0" y="0.0" width="53" height="51"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2k-Pi-fsW">
+                                                <rect key="frame" x="53" y="0.0" width="186" height="51"/>
+                                                <color key="backgroundColor" red="0.42745098040000001" green="0.32549019610000002" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="NexaRustSlab-BlackShadow01" family="Nexa Rust Slab" pointSize="13"/>
+                                                <state key="normal" title="ACEPTAR">
+                                                    <color key="titleColor" red="0.97433952010000002" green="0.96963256590000002" blue="0.97904647430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DkU-HI-vj5">
+                                                <rect key="frame" x="239" y="0.0" width="53" height="51"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWR-sN-Hp9">
+                                                <rect key="frame" x="292" y="0.0" width="186" height="51"/>
+                                                <color key="backgroundColor" red="0.42745098040000001" green="0.32549019610000002" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="NexaRustSlab-BlackShadow01" family="Nexa Rust Slab" pointSize="13"/>
+                                                <state key="normal" title="EDITAR">
+                                                    <color key="titleColor" red="0.97433952010000002" green="0.96963256590000002" blue="0.97904647430000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="49e-Tb-3d3" kind="show" id="eh1-AE-cW2"/>
+                                                </connections>
+                                            </button>
+                                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmC-u2-Naz">
+                                                <rect key="frame" x="478" y="0.0" width="52" height="51"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="mmC-u2-Naz" firstAttribute="width" secondItem="fyj-5l-K1q" secondAttribute="width" multiplier="0.2" id="059-nB-mKx"/>
+                                            <constraint firstItem="DqX-bR-Fna" firstAttribute="width" secondItem="fyj-5l-K1q" secondAttribute="width" multiplier="0.1" id="Hqj-nm-qin"/>
+                                            <constraint firstItem="mmC-u2-Naz" firstAttribute="width" secondItem="fyj-5l-K1q" secondAttribute="width" multiplier="0.1" id="T5G-lH-H81"/>
+                                            <constraint firstItem="mmC-u2-Naz" firstAttribute="height" secondItem="fyj-5l-K1q" secondAttribute="height" multiplier="0.1" id="TyR-Jl-yEP"/>
+                                            <constraint firstItem="wWR-sN-Hp9" firstAttribute="width" secondItem="fyj-5l-K1q" secondAttribute="width" multiplier="0.35" id="Zed-vs-Bjn"/>
+                                            <constraint firstItem="B2k-Pi-fsW" firstAttribute="width" secondItem="fyj-5l-K1q" secondAttribute="width" multiplier="0.35" id="bNl-YK-D7m"/>
+                                            <constraint firstItem="DqX-bR-Fna" firstAttribute="width" secondItem="fyj-5l-K1q" secondAttribute="width" multiplier="0.1" id="dD8-ec-SAc"/>
+                                            <constraint firstItem="B2k-Pi-fsW" firstAttribute="width" secondItem="fyj-5l-K1q" secondAttribute="width" multiplier="0.35" id="drR-46-y7E"/>
+                                            <constraint firstItem="wWR-sN-Hp9" firstAttribute="width" secondItem="fyj-5l-K1q" secondAttribute="width" multiplier="0.35" id="hPn-iS-qN7"/>
+                                            <constraint firstItem="DqX-bR-Fna" firstAttribute="width" secondItem="fyj-5l-K1q" secondAttribute="width" multiplier="0.2" id="oQN-yp-umJ"/>
+                                            <constraint firstItem="DkU-HI-vj5" firstAttribute="width" secondItem="fyj-5l-K1q" secondAttribute="width" multiplier="0.1" id="qmL-K7-saU"/>
+                                            <constraint firstItem="B2k-Pi-fsW" firstAttribute="width" secondItem="fyj-5l-K1q" secondAttribute="width" multiplier="0.3" id="s9b-BB-MWo"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Hqj-nm-qin"/>
+                                                <exclude reference="oQN-yp-umJ"/>
+                                                <exclude reference="drR-46-y7E"/>
+                                                <exclude reference="s9b-BB-MWo"/>
+                                                <exclude reference="059-nB-mKx"/>
+                                                <exclude reference="T5G-lH-H81"/>
+                                                <exclude reference="hPn-iS-qN7"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="516" id="Ka4-0P-Ya3"/>
+                                    <constraint firstItem="q0c-d3-ojT" firstAttribute="height" secondItem="ABF-rQ-736" secondAttribute="height" multiplier="0.1" id="Z1m-LC-Ums"/>
+                                    <constraint firstItem="EXf-G3-aWH" firstAttribute="height" secondItem="ABF-rQ-736" secondAttribute="height" multiplier="0.3" id="oJN-im-qAb"/>
+                                    <constraint firstItem="JdY-Vy-dC0" firstAttribute="height" secondItem="ABF-rQ-736" secondAttribute="height" multiplier="0.5" id="vQG-wB-mT6"/>
+                                    <constraint firstItem="fyj-5l-K1q" firstAttribute="height" secondItem="ABF-rQ-736" secondAttribute="height" multiplier="0.1" id="yCl-2Z-d9R"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="plm-NX-PDf" firstAttribute="top" secondItem="Lu9-Dk-Jdy" secondAttribute="top" id="3VU-54-qvR"/>
+                            <constraint firstAttribute="trailing" secondItem="plm-NX-PDf" secondAttribute="trailing" id="HAZ-GR-aso"/>
+                            <constraint firstItem="plm-NX-PDf" firstAttribute="leading" secondItem="Lu9-Dk-Jdy" secondAttribute="leading" id="Lrd-Nv-Od4"/>
+                            <constraint firstItem="gCb-Ga-eEn" firstAttribute="top" secondItem="plm-NX-PDf" secondAttribute="bottom" id="ebl-ol-PzP"/>
+                            <constraint firstItem="gCb-Ga-eEn" firstAttribute="top" secondItem="ABF-rQ-736" secondAttribute="bottom" constant="20" id="gKA-b3-f3V"/>
+                            <constraint firstAttribute="trailing" secondItem="ABF-rQ-736" secondAttribute="trailing" constant="35" id="kbB-ad-0Ix"/>
+                            <constraint firstItem="ABF-rQ-736" firstAttribute="leading" secondItem="Lu9-Dk-Jdy" secondAttribute="leading" constant="35" id="pMY-cQ-DmZ"/>
+                            <constraint firstItem="ABF-rQ-736" firstAttribute="top" secondItem="Lu9-Dk-Jdy" secondAttribute="top" constant="15" id="uie-i3-h3X"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="masa_elegida" destination="AUs-ah-4z7" id="mLW-06-gjo"/>
+                        <outlet property="queso_elegido" destination="WJm-bV-rVV" id="lxY-En-MNL"/>
+                        <outlet property="tamanio_elegido" destination="gJt-Cg-4dG" id="Zbu-bV-96r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LbZ-A4-WP6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1353" y="1063"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="gVf-db-Y2x" kind="relationship" relationship="viewControllers" id="Atk-qq-W6O"/>
+                        <segue destination="kTw-ug-4dR" kind="relationship" relationship="viewControllers" id="4jR-9k-eIl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="check_a" width="37" height="37"/>
+        <image name="fondo" width="521" height="739"/>
+        <image name="ingredientes" width="32" height="32"/>
+        <image name="masa" width="32" height="32"/>
+        <image name="pizza" width="32" height="32"/>
+        <image name="pizza_masa" width="320" height="213"/>
+        <image name="pizza_queso" width="300" height="199"/>
+        <image name="pizza_tamanio" width="1280" height="800"/>
+        <image name="queso" width="32" height="32"/>
+        <image name="radio_a" width="37" height="37"/>
+    </resources>
+</document>
