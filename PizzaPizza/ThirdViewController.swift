@@ -14,10 +14,24 @@ class ThirdViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     
     var lista_quesos = ["mozarela","cheddar", "parmesano", "sin queso"]
     
+    @IBOutlet weak var vpickerView: UIPickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        let queso = appDelegate.queso
+        if queso == "mozarela" {
+            vpickerView.selectRow(0, inComponent: 0, animated: false)
+        }else if queso == "cheddar" {
+            vpickerView.selectRow(1, inComponent: 0, animated: false)
+        }else if queso == "parmesano" {
+            vpickerView.selectRow(2, inComponent: 0, animated: false)
+        }else if queso == "sin queso" {
+            vpickerView.selectRow(3, inComponent: 0, animated: false)
+        }
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

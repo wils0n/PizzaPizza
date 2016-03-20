@@ -380,6 +380,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Queso" image="queso" id="cny-Oa-Wr3"/>
+                    <connections>
+                        <outlet property="vpickerView" destination="VQl-Cs-1WW" id="IWh-WE-RGd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="08j-nd-umh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
