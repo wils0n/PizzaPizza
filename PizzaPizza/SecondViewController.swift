@@ -19,21 +19,22 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let masa = appDelegate.masa
-        
-        if masa == "" {
-            self.m_delgada.setImage(UIImage(named: "radio_a.png"), forState: UIControlState.Normal)
-            self.m_crujiente.setImage(UIImage(named: "radio_a.png"), forState: UIControlState.Normal)
-            self.m_gruesa.setImage(UIImage(named: "radio_a.png"), forState: UIControlState.Normal)
-        }else{
-            if masa == "delgada" {
-                self.m_delgada.setImage(UIImage(named: "radio_b.png"), forState: UIControlState.Normal)
-            }else if masa == "crujiente" {
-                self.m_crujiente.setImage(UIImage(named: "radio_b.png"), forState: UIControlState.Normal)
-            }else if masa == "gruesa" {
-                self.m_gruesa.setImage(UIImage(named: "radio_b.png"), forState: UIControlState.Normal)
+
+            let masa = appDelegate.masa
+            if masa == "" {
+                self.m_delgada.setImage(UIImage(named: "radio_a.png"), forState: UIControlState.Normal)
+                self.m_crujiente.setImage(UIImage(named: "radio_a.png"), forState: UIControlState.Normal)
+                self.m_gruesa.setImage(UIImage(named: "radio_a.png"), forState: UIControlState.Normal)
+            }else{
+                if masa == "delgada" {
+                    self.m_delgada.setImage(UIImage(named: "radio_b.png"), forState: UIControlState.Normal)
+                }else if masa == "crujiente" {
+                    self.m_crujiente.setImage(UIImage(named: "radio_b.png"), forState: UIControlState.Normal)
+                }else if masa == "gruesa" {
+                    self.m_gruesa.setImage(UIImage(named: "radio_b.png"), forState: UIControlState.Selected)
+                }
             }
-        }
+
 
     }
     

@@ -141,6 +141,11 @@
                                     <constraint firstAttribute="height" constant="516" id="caN-1N-JCP"/>
                                     <constraint firstItem="dax-Dn-MwP" firstAttribute="height" secondItem="Il5-cS-vvv" secondAttribute="height" multiplier="0.1" id="uqy-xf-nZe"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="caN-1N-JCP"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -681,9 +686,9 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JdY-Vy-dC0">
                                         <rect key="frame" x="0.0" y="207" width="530" height="258"/>
                                         <subviews>
-                                            <tableView clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kpl-y9-hOh">
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kpl-y9-hOh">
                                                 <rect key="frame" x="0.0" y="0.0" width="530" height="258"/>
-                                                <color key="backgroundColor" red="0.95737179490000002" green="0.63308754040000004" blue="0.2421550754" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.99215686274509807" green="0.95686274509803926" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="separatorColor" red="0.97433952010000002" green="0.96963256590000002" blue="0.97904647430000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="sectionIndexBackgroundColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="sectionIndexTrackingBackgroundColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -694,9 +699,9 @@
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ngY-0z-DOf" id="IVv-Mj-hoY">
                                                             <rect key="frame" x="0.0" y="0.0" width="530" height="43"/>
                                                             <autoresizingMask key="autoresizingMask"/>
-                                                            <color key="backgroundColor" red="0.99215686274509807" green="0.95686274509803926" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="backgroundColor" red="0.9882352941176471" green="0.94901960784313721" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
                                                         </tableViewCellContentView>
-                                                        <color key="backgroundColor" red="0.97993731146304675" green="0.94290128153690833" blue="0.88386502602549311" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="0.99215686274509807" green="0.95686274509803926" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
                                                     </tableViewCell>
                                                 </prototypes>
                                                 <connections>

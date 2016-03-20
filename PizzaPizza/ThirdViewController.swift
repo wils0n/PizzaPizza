@@ -19,7 +19,7 @@ class ThirdViewController: UIViewController, UIPickerViewDataSource, UIPickerVie
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
+
     override func viewDidAppear(animated: Bool) {
         let queso = appDelegate.queso
         if queso == "mozarela" {

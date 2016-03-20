@@ -47,9 +47,8 @@ class MiOrdenViewController: UIViewController, UITableViewDelegate, UITableViewD
         print("Tamanio: \(appDelegate.tamanio)")
         print("Masa: \(appDelegate.masa)")
         print("Queso: \(appDelegate.queso)")
-        
-        let array_ingredientes = appDelegate.ingredientes
-        for i in array_ingredientes {
+        print("Ingredientes: ")
+        for i in appDelegate.ingredientes {
             print(i)
         }
 

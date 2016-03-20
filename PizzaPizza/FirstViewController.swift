@@ -18,6 +18,7 @@ class FirstViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         let tamanio = appDelegate.tamanio
         
         if tamanio == "" {
