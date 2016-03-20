@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MiOrdenViewController: UIViewController {
+class MiOrdenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tamanio_elegido: UILabel!
     @IBOutlet weak var masa_elegida: UILabel!
@@ -16,6 +16,7 @@ class MiOrdenViewController: UIViewController {
     
     
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,15 +47,41 @@ class MiOrdenViewController: UIViewController {
         print("Tamanio: \(appDelegate.tamanio)")
         print("Masa: \(appDelegate.masa)")
         print("Queso: \(appDelegate.queso)")
+        
+        let array_ingredientes = appDelegate.ingredientes
+        for i in array_ingredientes {
+            print(i)
+        }
 
         // Do any additional setup after loading the view.
     }
 
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return appDelegate.ingredientes.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        
+        let numero_celda = indexPath.row
+        cell.textLabel?.text=appDelegate.ingredientes[numero_celda]
+        
+        return cell
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    
+    @IBAction func Editar(sender: AnyObject) {
+        appDelegate.ingredientes = [String]()
+    }
 
     /*
     // MARK: - Navigation
